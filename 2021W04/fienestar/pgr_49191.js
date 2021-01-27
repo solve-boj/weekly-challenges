@@ -32,7 +32,7 @@ function solution(n, results) {
     
     let players = []
     for(let i=0;i != n; ++i)
-        players.push({idx: i, winner: [], loser: []})
+        players.push({winner: [], loser: []})
     
     for(let i in results){
         let winner = results[i][0]-1
