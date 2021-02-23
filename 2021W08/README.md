@@ -1,6 +1,6 @@
 # 2021W08
 
-| 제목 | 난이도(or 정답비율) | 힌트 |
+| 제목 | 난이도(or 정답비율) | 비고 |
 |:------:|:-----:|:-----:|
 | [타겟넘버](https://programmers.co.kr/learn/courses/30/lessons/43165) | 순한맛 | - |
 | [예상대진표](https://programmers.co.kr/learn/courses/30/lessons/12985) | 순한맛 | - |
