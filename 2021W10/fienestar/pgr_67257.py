@@ -1,3 +1,7 @@
+'''
+    수식 최대화
+    https://programmers.co.kr/learn/courses/30/lessons/6725
+'''
 def mul(a,b):
     return a*b
 def add(a,b):

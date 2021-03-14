@@ -1,3 +1,7 @@
+/*
+    Contact
+    https://www.acmicpc.net/problem/1013
+*/
 #include <bits/stdc++.h>
 
 using namespace std;
