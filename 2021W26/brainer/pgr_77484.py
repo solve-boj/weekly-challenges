@@ -1,5 +1,5 @@
 # 로또의 최고 순위와 최저 순위
-# https://github.com/solve-boj/weekly-challenges
+# https://programmers.co.kr/learn/courses/30/lessons/77484
 
 # 1	6개 번호가 모두 일치
 # 2	5개 번호가 일치
