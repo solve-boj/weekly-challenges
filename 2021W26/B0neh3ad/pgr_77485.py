@@ -29,10 +29,7 @@ def rotation(matrix, q):
 
 def solution(rows, columns, queries):
     answer = []
-    numbers = []
-
-    for i in range(rows):
-        numbers.append(list(range(columns*i + 1, columns*(i+1) + 1)))
+    numbers = [list(range(columns*i + 1, columns*(i+1) + 1)) for i in range(rows)]
 
     for query in queries:
         answer.append(rotation(numbers, query))
