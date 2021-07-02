@@ -28,7 +28,7 @@ vector<int> solution(vector<string> enroll, vector<string> referral, vector<stri
             answer[idx] += money - money / 10;
             money = money / 10;
             idx = parent[idx];
-        }while(idx != parent[idx]);
+        }while(idx != parent[idx] && money);
     }
     
     answer.resize(enroll.size());
