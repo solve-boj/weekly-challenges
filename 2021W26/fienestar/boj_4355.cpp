@@ -7,23 +7,8 @@
 using namespace std;
 using ull = long long;
 
-ull euler_phi(ull n) {
-    ull result = n;
-    for (ull i = 2; i * i <= n; i++) {
-        if (n % i == 0) {
-            while (n % i == 0)
-                n /= i;
-            result -= result / i;
-        }
-    }
-    if (n > 1)
-        result -= result / n;
-    return result;
-}
-
 void solve(ull n)
 {
-
     ull rslt = n;
 
     if(n%2 == 0){
