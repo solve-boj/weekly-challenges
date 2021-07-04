@@ -1,29 +1,46 @@
+/*
+    에디터
+    https://www.acmicpc.net/problem/1406
+*/
+import java.io.*
+import java.util.*
 fun main(args: Array<String>){
-    val str = StringBuilder(readLine()!!)
-    var num = readLine()!!.toInt()
-    var cursor = str.length;
+    val br = BufferedReader(InputStreamReader(System.`in`))
+    val bw = BufferedWriter(OutputStreamWriter(System.out))
+    val tokens = StringTokenizer(br.readText())
+    val str = tokens.nextToken()
+    var num = tokens.nextToken().toInt()
+    val lst : LinkedList<String> = LinkedList()
+    for(k in str){
+        lst.add(k.toString())
+    }
+    val iter = lst.listIterator(str.length)
     while(num-->0){
-        val cmd = readLine()!!
-        val type = cmd[0];
-        when(type){
-            'L'->{
-                if(cursor>0)cursor--;
+        val cmd = tokens.nextToken()
+        when(cmd){
+            "L"->{
+                if(iter.hasPrevious())
+                    iter.previous()
             }
-            'D'->{
-                if(cursor<str.length)cursor++;
+            "D"->{
+                if(iter.hasNext())
+                    iter.next()
+
             }
-            'B'->{
-                if(cursor>0){
-                    cursor--;
-                    str.deleteAt(cursor);
+            "B"->{
+                if(iter.hasPrevious()){
+                    iter.previous()
+                    iter.remove()
                 }
             }
-            'P'->{
-                val chr = cmd[2]
-                str.insert(cursor, chr)
-                cursor++
+            "P"->{
+                iter.add(tokens.nextToken())
             }
         }
     }
-    println(str)
+    for(k in lst){
+        bw.write(k)
+    }
+    bw.flush()
+    bw.close()
 }
