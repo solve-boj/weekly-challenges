@@ -26,6 +26,14 @@
 */
 ```
 
+# 2021W27
+
+| 제목 | 난이도(or 정답비율) |
+|:------:|:-----:|
+| [로또의 최고 순위와 최저 순위](https://programmers.co.kr/learn/courses/30/lessons/77484) | 순한맛 |
+| [행렬 테두리 회전하기](https://programmers.co.kr/learn/courses/30/lessons/77485) | 순한맛 |
+| [가장 먼 노드](https://programmers.co.kr/learn/courses/30/lessons/49189) | 중간맛 |
+
 # 2021W26
 
 | 제목 | 난이도(or 정답비율) |
