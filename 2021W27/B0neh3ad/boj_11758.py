@@ -1,3 +1,8 @@
+'''
+    CCW
+    https://www.acmicpc.net/problem/11758
+'''
+
 def cross(x1, y1, x2, y2):
     return x1*y2 - x2*y1
 

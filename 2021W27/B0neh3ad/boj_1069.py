@@ -1,3 +1,7 @@
+'''
+    집으로
+    https://www.acmicpc.net/problem/1069
+'''
 x, y, d, t = map(int, input().split())
 dis = (x ** 2 + y ** 2) ** .5
 

@@ -1,3 +1,7 @@
+'''
+    겉넓이 구하기
+    https://www.acmicpc.net/problem/16931
+'''
 n, m = map(int, input().split())
 rows = []
 for i in range(n):

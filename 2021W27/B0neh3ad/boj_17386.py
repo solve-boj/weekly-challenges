@@ -1,3 +1,7 @@
+'''
+    선분 교차 1
+    https://www.acmicpc.net/problem/17386
+'''
 def cross(x1, y1, x2, y2):
     return x1*y2 - x2*y1
 

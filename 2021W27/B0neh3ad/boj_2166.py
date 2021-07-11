@@ -1,3 +1,8 @@
+'''
+    다각형의 면적
+    https://www.acmicpc.net/problem/2166
+'''
+
 def cross(x1, y1, x2, y2):
     return x1*y2 - x2*y1
 
