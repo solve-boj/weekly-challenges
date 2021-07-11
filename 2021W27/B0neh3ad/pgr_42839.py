@@ -1,3 +1,7 @@
+'''
+    소수 찾기
+    https://programmers.co.kr/learn/courses/30/lessons/42839
+'''
 def check(num, lst):
     # 소수 여부 체크 -> +1 여부 결정
     cnt = 1 if num > 1 else 0
