@@ -1,6 +1,6 @@
 /*
     N과 M (9)
-    https://www.acmicpc.net/problem/15654
+    https://www.acmicpc.net/problem/15663
 */
 #include <iostream>
 #include <algorithm>
