@@ -1,3 +1,7 @@
+/*
+    이동
+    https://www.acmicpc.net/problem/1067
+*/
 #include <iostream>
 #include <vector>
 #include <cmath>
