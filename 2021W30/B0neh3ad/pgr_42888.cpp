@@ -2,8 +2,6 @@
     오픈채팅방
     https://programmers.co.kr/learn/courses/30/lessons/42888
 */
-
-#include <iostream>
 #include <map>
 #include <string>
 #include <vector>
@@ -52,9 +50,4 @@ vector<string> solution(vector<string> record) {
         }
     }
     return answer;
-}
-
-int main(void){
-    
-    return 0;
 }
