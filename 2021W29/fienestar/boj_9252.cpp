@@ -1,6 +1,6 @@
 /*
-    수열과 쿼리 3
-    https://www.acmicpc.net/problem/13544
+    LCS 2
+    https://www.acmicpc.net/problem/9252
 */
 #include <bits/stdc++.h>
 
