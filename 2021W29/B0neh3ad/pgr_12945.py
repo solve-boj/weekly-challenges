@@ -9,6 +9,3 @@ def solution(n):
         a = b
         b = c
     return a
-
-for i in range(100):
-    print(solution(i))
