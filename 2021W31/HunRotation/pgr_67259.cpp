@@ -64,7 +64,7 @@ int solution(vector<vector<int>> board) {
             }
         }
     }
-    
+
 
     answer = min_costs[board.size()-1][board.size()-1];
     return answer;
@@ -72,11 +72,11 @@ int solution(vector<vector<int>> board) {
 
 int main() {
     int a[3][3] = {{0, 0, 0}, {0, 1, 0}, {0, 0, 0}};
-
+    
 }
 // keyword: BFS
 // 시간복잡도: O(N^2))
 /*
 idea: string을 순서대로 정렬하면, 앞쪽 파트가 똑같을 때 길이가 더 긴 것이
 더 짧은 것 바로 뒤에 온다는 점을 이용
-*/
+*/ 
