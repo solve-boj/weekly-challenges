@@ -20,11 +20,8 @@ int solution(vector<int> people, int limit) {
         --e;
         ++answer;
     }
-
-    while(!visited[s]){ // 여기 !people[s]로 했었음 ㅋㅋ
-        ++answer;
-        ++s;
-    }
+    
+    if(!visited[s]){ ++answer; } // 여기 !people[s]로 했었음 ㅋㅋ
 
     return answer;
 }
@@ -36,5 +33,5 @@ int main(){
 /*
     1트: 답은 다 맞았으나 효율성에서 실패. O(n^2)은 너무 큰 듯.
     음... 이거 걍 two pointer 아니냐? 그러면 (정렬 포함) O(nlogn) 가능할 듯
-    2트: 분명 맞는 거 같은데 사이트 자체 에러 때문에 패스가 안 됨.
+    2트: two pointer로 패스.
 */
