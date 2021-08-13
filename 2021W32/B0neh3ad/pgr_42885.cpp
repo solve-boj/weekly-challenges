@@ -1,6 +1,9 @@
+/*
+    구명보트
+    https://programmers.co.kr/learn/courses/30/lessons/42885
+*/
 #include <vector>
 #include <algorithm>
-#include <iostream>
 
 using namespace std;
 
@@ -24,11 +27,6 @@ int solution(vector<int> people, int limit) {
     if(!visited[s]){ ++answer; } // 여기 !people[s]로 했었음 ㅋㅋ
 
     return answer;
-}
-
-int main(){
-    cout << solution(vector<int>({10, 10, 10, 10, 10}), 50);
-    return 0;
 }
 /*
     1트: 답은 다 맞았으나 효율성에서 실패. O(n^2)은 너무 큰 듯.
