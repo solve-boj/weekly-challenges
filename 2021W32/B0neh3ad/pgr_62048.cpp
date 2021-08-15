@@ -2,31 +2,17 @@
     멀쩡한 사각형
     https://programmers.co.kr/learn/courses/30/lessons/62048
 */
-#include <iostream>
-
 using namespace std;
 
-long long solution(int w,int h) {
-    int temp;
-    if(w > h){
-        temp = w;
-        w = h;
-        h = temp;
-    }
-
-    long long new_w = w, new_h = h;
-    long long answer = h;
-    for(int i=1; i<=new_w; ++i){
-        answer += ((new_h%new_w)*(i%new_w)%new_w) ? 1 : 0;
-    }
-
-    answer = new_w*new_h - answer;
-    return answer;
+long long gcd(long long a, long long b){
+    if(b == 0){ return a; }
+    return gcd(b, a%b);
 }
 
-int main(void){
-    cout << solution(8, 12);
-    return 0;
+long long solution(int w, int h) {
+    long long new_w = w, new_h = h;
+    long long answer = new_w*new_h - (new_w+new_h-gcd(new_w,new_h));
+    return answer;
 }
 
 /*
@@ -41,4 +27,8 @@ int main(void){
     세 번째 시도: 결국 각 교차점의 y좌표가 정수인지 여부에 따라서만 결정되는 것.
     이를 바탕으로 위 코드 구현.
     -> 성공! 시간복잡도는 O(n)
+
+    4트: 복습하다가 "가로가 a, 세로가 b인 직사각형의 대각선이 지나는 격자점의 개수는 gcd(a, b)"임을 떠올렸고,
+    3트 때 한 발상과 연관지어 w*h - (w+h-gcd(w,h))로 풀었다.
+    시간복잡도는 O(logn)
 */
