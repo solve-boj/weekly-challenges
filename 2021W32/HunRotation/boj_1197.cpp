@@ -2,6 +2,10 @@
     최소 스패닝 트리
     https://www.acmicpc.net/problem/1197
 */
+/*
+    네트워크 연결
+    https://www.acmicpc.net/problem/1922
+*/
 
 #include <cstdio>
 #include <algorithm>
@@ -41,7 +45,6 @@ int main() {
         for(int i=0;i<graph[d].size();i++) {
             pq.push(make_pair(-graph[d][i].first, -graph[d][i].second));
         }
-
     }
 
     printf("%d", cost);
