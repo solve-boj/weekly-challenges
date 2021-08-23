@@ -63,3 +63,6 @@ int solution(vector<vector<int>> land, int height)
     
     return ans;
 }
+/*
+    단지 번호 대신 인덱스를 사용합시다.
+*/
