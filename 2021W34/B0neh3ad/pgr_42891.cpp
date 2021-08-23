@@ -13,7 +13,7 @@ bool cmp(pair<long long, int >& lhs, pair<long long, int >& rhs){ return lhs.sec
 int solution(vector<int> food_times, long long k) {
     int answer = 0;
 
-    // 1. 데이터 가공(<시간, {그때 다 먹는 음식들의 인덱스}> pair array 만들고 정렬)
+    // 1. 데이터 가공(<시간, 인덱스> pair array 만들고 정렬)
     vector<pair<long long, int> > temp_list;
     for(int i=0; i<food_times.size(); ++i)
         temp_list.push_back({food_times[i], i+1});
@@ -39,4 +39,6 @@ int solution(vector<int> food_times, long long k) {
 }
 /*
     드럽게 복잡하네...
+    1. 변화량을 0으로 만듦으로써 중복 원소를 동일하게 처리할 수 있다는 생각
+    2. 배열의 부분만 정렬함으로써 원하는 해를 얻을 수도 있다는 생각
 */
