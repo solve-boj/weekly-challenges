@@ -25,7 +25,7 @@ int solution(vector<vector<int>> land, int height)
     
     for(size_t i=0; i!=N; ++i)
         for(size_t j=0; j!=N; ++j)
-            for(size_t k=0; k!=4; ++k) {
+            for(size_t k=0; k!=2; ++k) {
                 static constexpr int di[] = {1,0};
                 static constexpr int dj[] = {0,1};
                 
