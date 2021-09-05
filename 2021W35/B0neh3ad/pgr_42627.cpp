@@ -1,3 +1,7 @@
+/*
+    디스크 컨트롤러
+    https://programmers.co.kr/learn/courses/30/lessons/42627?language=cpp
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using pii = pair<int, int>;
