@@ -460,5 +460,8 @@ MigrationBackup/
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,visualstudio,jetbrains+all
 .vscode/
 
-# Executable Files
+# Remove binary files from git
 *.exe
+
+# Remove test code from git
+temp.*
