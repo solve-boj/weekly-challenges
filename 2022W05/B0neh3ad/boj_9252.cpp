@@ -24,8 +24,13 @@ int main(void){
     string ans;
     while(a_len && b_len){
         if(a[a_len-1] == b[b_len-1]){
+            ans = a[a_len-1] + ans;
             --a_len; --b_len;
         }
+        else{
+            (dp[a_len-1][b_len] < dp[a_len][b_len-1]) ? --b_len : --a_len;
+        }
     }
+    cout << ans;
     return 0;
 }
