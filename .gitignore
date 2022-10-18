@@ -465,3 +465,6 @@ MigrationBackup/
 
 # Remove test code from git
 temp.*
+
+# .o files
+*.o
