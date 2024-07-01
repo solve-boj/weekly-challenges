@@ -1,0 +1,27 @@
+"""
+연도별 대장균 크기의 편차 구하기
+https://school.programmers.co.kr/learn/courses/30/lessons/299310
+"""
+
+
+# ID	PARENT_ID	SIZE_OF_COLONY	DIFFERENTIATION_DATE	GENOTYPE
+
+WITH MaxSizeByYear AS (
+    SELECT msby.differ_year AS YEAR, MAX(msby.SIZE_OF_COLONY) MAX_SIZE
+    FROM (
+        SELECT ID, PARENT_ID, SIZE_OF_COLONY, YEAR(DIFFERENTIATION_DATE) AS differ_year
+        FROM ECOLI_DATA
+    ) msby
+    GROUP BY msby.differ_year
+),
+
+SizeIdByYearStd AS (
+    SELECT ID, PARENT_ID, SIZE_OF_COLONY, DIFFERENTIATION_DATE, GENOTYPE
+    FROM ECOLI_DATA
+)
+
+SELECT YEAR, (MAX_SIZE - SIZE_OF_COLONY) AS YEAR_DEV, ID
+FROM SizeIdByYearStd s
+LEFT JOIN MaxSizeByYear m
+ON YEAR(s.DIFFERENTIATION_DATE) = m.YEAR
+ORDER BY YEAR ASC, YEAR_DEV ASC
