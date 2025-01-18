@@ -1,0 +1,8 @@
+SELECT *
+FROM(SELECT CATEGORY, PRICE, PRODUCT_NAME
+from FOOD_PRODUCT
+where CATEGORY in ('과자', '국', '김치', '식용유')
+group by CATEGORY, PRODUCT_NAME
+order by PRICE DESC
+) a
+group by CATEGORY
